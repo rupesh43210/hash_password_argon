@@ -24,9 +24,14 @@ Argon2 also supports the use of a secret input known as a "pepper". A pepper is 
 The length (in bytes) of the hash output. The longer the hash, the harder it is to crack.
 
 ### Types of Argon2: 
-Argon2 has three different variants: Argon2d, Argon2i, and Argon2id. Argon2d is designed to be faster and more memory-intensive, while Argon2i is designed to be slower and more resistant to side-channel attacks. Argon2id is a hybrid of Argon2d and Argon2i.
+Argon2 has three different variants: 
+1. Argon2d
+2. Argon2i
+3. Argon2id
+_Argon2d is designed to be faster and more memory-intensive, while Argon2i is designed to be slower and more resistant to side-channel attacks. Argon2id is a hybrid of Argon2d and Argon2i.
 
 Customizing these options allows for a wide range of hash output sizes and computational requirements, making Argon2 a versatile and secure option for password storage.
+ _
 
 
 
