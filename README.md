@@ -17,10 +17,13 @@ The degree of parallelism (i.e., the number of threads) used by the algorithm. I
 ### 4. Salt: 
 A randomly generated string that is added to the input password before hashing. The salt makes it harder for an attacker to use precomputed tables to crack the hash.
 
-### 5 Hash Length: 
+### 5. Pepper:
+Argon2 also supports the use of a secret input known as a "pepper". A pepper is a secret value that is added to the password before hashing. Unlike a salt, which is typically stored alongside the hashed password, a pepper is not stored in the database and must be kept secret by the application or system that is using Argon2.
+
+### 6 Hash Length: 
 The length (in bytes) of the hash output. The longer the hash, the harder it is to crack.
 
-### Type of Argon2: 
+### Types of Argon2: 
 Argon2 has three different variants: Argon2d, Argon2i, and Argon2id. Argon2d is designed to be faster and more memory-intensive, while Argon2i is designed to be slower and more resistant to side-channel attacks. Argon2id is a hybrid of Argon2d and Argon2i.
 
 Customizing these options allows for a wide range of hash output sizes and computational requirements, making Argon2 a versatile and secure option for password storage.
