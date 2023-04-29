@@ -20,7 +20,7 @@ A randomly generated string that is added to the input password before hashing. 
 ### 5. Pepper:
 Argon2 also supports the use of a secret input known as a "pepper". A pepper is a secret value that is added to the password before hashing. Unlike a salt, which is typically stored alongside the hashed password, a pepper is not stored in the database and must be kept secret by the application or system that is using Argon2.
 
-### 6 Hash Length: 
+### 6. Hash Length: 
 The length (in bytes) of the hash output. The longer the hash, the harder it is to crack.
 
 ### Types of Argon2: 
