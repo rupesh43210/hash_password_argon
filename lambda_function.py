@@ -21,7 +21,7 @@ def generate_password_hash(password):
         salt=SALT,
         time_cost=16,
         memory_cost=65536,
-        parallelism=8,
+        parallelism=16,
         hash_len=512,
         type=argon2.low_level.Type.ID
     )
